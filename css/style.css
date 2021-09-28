@@ -1,0 +1,53 @@
+img {
+    border-radius: 100%;
+	margin-top: 50px;
+	margin-left: 50px;
+	border: 5px solid #0081A7;
+}
+
+header {
+    background-image: url("../images/bg2.jpeg");
+	margin-left: -8px;
+	margin-right: -8px;
+	margin-top: -8px;
+	height: 300px;
+}
+
+  
+  footer {
+    background-color: #78787a;
+	height: 150px;
+	margin-right: -10px;
+	margin-left: -10px;
+	margin-bottom: -10px;
+    padding: 20px;
+  }
+
+  p {
+      color: aliceblue;
+  }
+
+  .about {
+    width: 50%; 
+    height: 100px; 
+    float: left;
+  }
+
+  .info_contianer {
+	margin-top: 80px;
+	margin-left: 50px;
+    height: auto;
+  }
+
+  .validator_icon {
+      text-align: right;
+      margin-left: 50%; 
+      height: 100px;
+  }
+
+  ul li {
+    list-style: none;
+    position: relative;
+    padding: 3px 0 2px 25px;
+  }
+  
