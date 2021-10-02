@@ -61,16 +61,19 @@ button {
 
 .column-1 {
     flex: 1 1 50%;
+    order: 1;
     background-color: rgb(92, 100, 100);
 }
 
 .column-2 {
     flex: 1 1 100%;
+    order: 3;
     background-color: rgb(178, 190, 190);
 }
 
 .column-3 {
     flex: 1 1 50%;
+    order: 2;
     background-color: rgb(163, 189, 189);
 }
 
