@@ -113,7 +113,17 @@
 
     const d = a.reduce((e1, e2) => e1 + e2)
     console.log("c) Return the product of all elements")
-    console.log(d)
+    console.log(d);
+
+    function shortest(a, b, c) {
+      let short = a;
+      if(b.length < short.length) {short = b}
+      if(c.length < short.length) {short = c}
+      return short;
+    }
+
+    console.log(shortest("hello", "z", "bye"));
+
   </script>
 </head>
 
