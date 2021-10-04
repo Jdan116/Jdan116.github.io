@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+  <script>
+    // initialize mocha
+    mocha.setup('bdd');
+    // chai has a lot of stuff, let's make assert global
+    let assert = chai.assert;
+
+    function sum(num) {
+      return num.reduce((x, y) => x + y);
+    }
+
+    function multiply(num) {
+      return num.reduce((x, y) => x * y);
+    }
+
+    function reverse(str) {
+      return str.split('').reverse().join('');
+    }
+
+    console.log(sum([1, 2, 3, 4]));
+    console.log(multiply([1, 2, 3, 4]));
+    console.log(reverse("daniel"));
+
+
+    function findLongestWord(words) {
+      const longest = words.split(" ").sort((a, b) => b.length - a.length);
+      return longest[0];
+    }
+
+    console.log(findLongestWord("Hi, how are you doing?")[0]);
+
+    describe("sum", function () {
+      it("takes an array of number and return their sum",
+        function () {
+          assert.equal(10, sum([1, 2, 3, 4]));
+        });
+    });
+
+    describe("multiply", function () {
+      it("takes an array of number and return their product",
+        function () {
+          assert.equal(24, multiply([1, 2, 3, 4]));
+        });
+    });
+
+    describe("reverse", function () {
+      it("takes a string and return the string in reverse order",
+        function () {
+          assert.equal("leinad", reverse("daniel"));
+        });
+    });
+
+    describe("findLongestWord", function () {
+      it("takes an array of words and return the longest word",
+        function () {
+          assert.equal("doing?", findLongestWord("Hi, how are you doing?"));
+        });
+    });
+  </script>
+</head>
+
+<body>
+
+  <body>
+    <div id="mocha"></div>
+    <script>
+      mocha.run();
+    </script>
+  </body>
+
+</body>
+
+</html>
