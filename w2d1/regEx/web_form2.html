@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Webform2</title>
+</head>
+
+<body>
+    <header class="d-flex w-100 bg-info text-white align-items-center py-2 px-3">
+        <h5 class="p-0 m-0">MUM Golden Dome Market::: SRM System</h5>
+        <button
+            class="btn text-white bg-transparent border border-top-0 border-bottom-0 border-2 rounded-0 px-4 mx-5">Products</button>
+        <button class="btn text-white bg-transparent">Suppliers</button>
+        <P class="p-0 m-0 ms-auto me-3">Hello!</P>
+        <button class="btn btn-light">Sign Out</button>
+    </header>
+    <main class="container pt-5">
+        <h3>New Product Form</h3>
+        <form class="d-flex row px-2">
+            <div class="col-6 pe-2">
+                <div class="d-flex flex-column mb-3">
+                    <label class="mb-2" for="productNumber">product number:</label>
+                    <input class="form-control" id="productNumber" type="number" required pattern="[0-9]">
+                </div>
+                <div class="d-flex flex-column mb-3">
+                    <label class="mb-2" for="name">Name</label>
+                    <input class="form-control" id="name" type="text" required>
+                </div>
+                <div class="d-flex flex-column mb-3">
+                    <label class="mb-2" for="price">Unit Price</label>
+                    <input class="form-control" id="price" type="number" required pattern="[0-9]">
+                </div>
+            </div>
+            <div class="col-6 ps-2">
+                <div class="d-flex flex-column mb-3">
+                    <label class="mb-2" for="quantity">Quantity in Stock</label>
+                    <input class="form-control" id="quantity" type="number" required pattern="[0-9]">
+                </div>
+                <div class="d-flex flex-column mb-3">
+                    <label class="mb-2" for="supplier">Supplier</label>
+                    <select class="form-control" name="Supplier" id="supplier">
+                        <option value="" disabled selected hidden>Select supplier</option>
+                        <option value="1">supl 1</option>
+                        <option value="2">supl 2</option>
+                        <option value="3">supl 3</option>
+                    </select>
+                </div>
+                <div class="d-flex flex-column mb-3">
+                    <label class="mb-2" for="date">Date supplied</label>
+                    <input class="form-control" id="date" type="date" required>
+                    <small class="text-secondary">Enter valid date</small>
+                </div>
+            </div>
+            <div class="ms-auto w-auto justify-content-between">
+                <button class="btn bg-transparent border border-dark" type="reset">Reset</button>
+                <button class="btn bg-transparent border border-danger mx-5" type="button">Cancel</button>
+                <button class="btn bg-transparent border border-info" type="submit">Add Product</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

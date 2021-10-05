@@ -1,5 +1,5 @@
 const chai = window.chai
-let assert = chai.assert;
+let assert = .assert;
 
 describe("sum", () => {
     it("takes an array of number and return their sum",

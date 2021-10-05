@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>W2D1 RegEx</title>
+    <meta charset="utf-8">
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>W2D1 RegEx</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="form.css" type="text/css" rel="stylesheet">
+    <script src="ascii.js"></script>
+    <script src="submit.js"></script>
+</head>
+
+<body>
+
+    <div class="url_container">
+        <div class="inner_div">
+            <label class="url_tags">URL:
+            <input id="url_txt" class="url" type="text" placeholder="Enter url"></label>
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="inner_div">
+            <label class="tags">Email address</label>
+            <input class="input_text inputs" type="text" placeholder="Enter email">
+            <p>We'll never share your email with anyone else</p>
+            <label class="tags">Password</label>
+            <input type="password" id="pass_id" name="pass" class="pass_txt input_text" placeholder="Password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}"
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 10 or more characters"
+                required>
+
+            <label class="tags"><input class="inputs" type="checkbox">Check me out</label>
+            <input id="submit_btn" type="button" value="Submit">
+            <label id="msg"></label>
+        </div>
+
+    </div>
+</body>
+
+</html>
