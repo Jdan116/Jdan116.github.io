@@ -26,6 +26,13 @@
                 });
         });
 
+        describe("negative value withdraw throw exception", () => {
+            it(`Trying to withdraw -100. Withdraw amount has to be greater than zero`,
+                () => {
+                    assert.throws(function() {acc2.withdraw(-100)}, Error, 'Withdraw amount has to be greater than zero');
+                });
+        });
+
         describe("deposit", () => {
             it(`The Current balance for Account #${acc2.getNumber()} is ${acc2.getBalance()}. Now, account balance is $${acc2.getBalance() + DEPOSIT} after $${DEPOSIT} deposited`,
                 () => {
@@ -79,10 +86,6 @@
         describe("endOfMonth", () => {
             it("endOfMonth message retreived from different account type polymorphically",
                 () => {
-
-                    // bank.addAccount()
-                    // bank.addCheckingAccount(500);
-                    // bank.addSavingsAccount(1.5)
                     assert.equal(` Interest added SavingsAccount 2: balance: 0 interest: 1.5 Warning, low balance CheckingAccount 3: balance: -100 overdraft limit: 500 `, bank.endOfMonth());
                 });
         });
