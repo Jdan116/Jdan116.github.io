@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="utf-8">
+    <title>Current time</title>
+    <% const date = new Date(); let css; !(date.getHours() > 6 && date.getHours < 18) ? (css = 'day.css') : (css = 'night.css'); %>
+    <link rel="stylesheet" href="../css/<%= css %>">
+
+</head>
+
+<body>
+    <p>This page was loaded at <%= time %></p>
+
+</body>
+
+</html>
+

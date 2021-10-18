@@ -1,5 +1,5 @@
 {
-  "name": "q4",
+  "name": "q3_4",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,10 +7,11 @@
     "start": "node index",
     "dev": "nodemon"
   },
-  "author": "Daniel",
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "q4": "file:q4"
   },
   "devDependencies": {
     "nodemon": "^2.0.13"
