@@ -1,0 +1,17 @@
+
+.col1 {
+    text-align: right;
+    color: black;
+    padding: 3px;
+    margin: 2px;
+}
+
+.col2 {
+    align-items: left;
+    padding: 3px;
+    margin: 2px;
+}
+
+table, th, td {
+    border: 1px solid black;
+  }

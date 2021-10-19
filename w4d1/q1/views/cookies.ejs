@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <h1>Add cookies</h1>
+    <form class="container" action="/addCookies" method="post">
+        <label class="col1">Key: <input class="col2" type="text" name="key" /></label>
+        <label class="col1">Value: <input class="col2" type="text" name="value" /></label>
+        <input type="submit" value=" Save ">
+    </form>
+    <br />
+
+    <% if(cookie_list) { %>
+    <table>
+        <tr>
+            <th>Cookie key</th>
+            <th>Cookie value</th>
+        </tr>
+        <% for(cookie of cookie_list) { %>
+        <tr>
+            <td> <%= cookie.key %> </td>
+            <td> <%= cookie.value %> </td>
+        </tr>
+        <% } %>
+    </table>
+    <% } %>
+
+
+</body>
+
+</html>
